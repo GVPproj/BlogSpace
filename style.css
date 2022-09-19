@@ -1,0 +1,158 @@
+:root {
+  --accent-color: #0d4f8b;
+  --bg-color: #f0f8ff;
+  --text-color: #303030;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: #f0f8ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #f0f8ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #f0f8ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: var(--text-color);
+  font-size: 18px;
+  margin: 0;
+  
+  /* letter-spacing: 1px; */
+}
+
+/* typeography */
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h4 {
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--bg-color);
+}
+
+.post-div h3 {
+  font-size: 1.675em;
+  letter-spacing: 1px;
+}
+
+footer h4 {
+  letter-spacing: 2px;
+}
+
+#post-title{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+}
+
+textarea{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+}
+
+/* layout */
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+nav,
+footer {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--accent-color); */
+  background: #1e3c72; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2a5298,
+    #1e3c72
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2a5298,
+    #1e3c72
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 30px;
+  padding: 25px;
+}
+
+main {
+  margin: 150px auto 30px;
+  width: 90%;
+  min-height: 100vh;
+  max-width: 600px;
+}
+
+footer {
+  margin-top: 75px;
+  /* position: fixed;
+  bottom: 0; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* margin-bottom: 20px; */
+  
+}
+
+.post-div {
+  padding: 40px 0;
+
+  /* animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+/* buttons and rulers */
+
+button {
+  max-width: max-content;
+  border: none;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 4px 10px;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: ease-in-out 180ms;
+}
+
+button:hover,
+button:active {
+  color: #0d4f8b;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+hr {
+  max-width: 75%;
+  border: 0;
+  border-top: 2px dotted var(--accent-color);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
